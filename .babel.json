@@ -1,0 +1,452 @@
+{
+  "{\"filename\":\"/app/server.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          },
+          {
+            "source": "path",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "path"
+              }
+            ]
+          },
+          {
+            "source": "./routes/router",
+            "imported": [
+              "router"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "router",
+                "local": "router"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [],
+          "specifiers": []
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/server.js",
+      "filenameRelative": "/app/server.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "server.js",
+      "sourceFileName": "server.js",
+      "sourceRoot": "/app",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "server"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nvar _path = require('path');\n\nvar _path2 = _interopRequireDefault(_path);\n\nvar _router = require('./routes/router');\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar app = (0, _express2.default)();\n\napp.use(_express2.default.static(_path2.default.join(__dirname, 'views')));\n\napp.use(_router.router);\n\nvar listener = app.listen(process.env.PORT, function () {\n  console.log('Your app is listening on port ' + listener.address().port);\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNlcnZlci5qcyJdLCJuYW1lcyI6WyJhcHAiLCJ1c2UiLCJzdGF0aWMiLCJqb2luIiwiX19kaXJuYW1lIiwibGlzdGVuZXIiLCJsaXN0ZW4iLCJwcm9jZXNzIiwiZW52IiwiUE9SVCIsImNvbnNvbGUiLCJsb2ciLCJhZGRyZXNzIiwicG9ydCJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7OztBQUNBOzs7O0FBRUE7Ozs7QUFFQSxJQUFNQSxNQUFNLHdCQUFaOztBQUVBQSxJQUFJQyxHQUFKLENBQVEsa0JBQVFDLE1BQVIsQ0FBZSxlQUFLQyxJQUFMLENBQVVDLFNBQVYsRUFBcUIsT0FBckIsQ0FBZixDQUFSOztBQUVBSixJQUFJQyxHQUFKOztBQUVBLElBQU1JLFdBQVdMLElBQUlNLE1BQUosQ0FBV0MsUUFBUUMsR0FBUixDQUFZQyxJQUF2QixFQUE2QixZQUFNO0FBQ2xEQyxVQUFRQyxHQUFSLG9DQUE2Q04sU0FBU08sT0FBVCxHQUFtQkMsSUFBaEU7QUFDRCxDQUZnQixDQUFqQiIsImZpbGUiOiJzZXJ2ZXIuanMiLCJzb3VyY2VSb290IjoiL2FwcCIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBleHByZXNzIGZyb20gJ2V4cHJlc3MnXG5pbXBvcnQgcGF0aCBmcm9tICdwYXRoJ1xuXG5pbXBvcnQgeyByb3V0ZXIgfSBmcm9tICcuL3JvdXRlcy9yb3V0ZXInXG5cbmNvbnN0IGFwcCA9IGV4cHJlc3MoKVxuXG5hcHAudXNlKGV4cHJlc3Muc3RhdGljKHBhdGguam9pbihfX2Rpcm5hbWUsICd2aWV3cycpKSlcblxuYXBwLnVzZShyb3V0ZXIpXG5cbmNvbnN0IGxpc3RlbmVyID0gYXBwLmxpc3Rlbihwcm9jZXNzLmVudi5QT1JULCAoKSA9PiB7XG4gIGNvbnNvbGUubG9nKGBZb3VyIGFwcCBpcyBsaXN0ZW5pbmcgb24gcG9ydCAke2xpc3RlbmVyLmFkZHJlc3MoKS5wb3J0fWApXG59KVxuIl19",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "server.js"
+      ],
+      "names": [
+        "app",
+        "use",
+        "static",
+        "join",
+        "__dirname",
+        "listener",
+        "listen",
+        "process",
+        "env",
+        "PORT",
+        "console",
+        "log",
+        "address",
+        "port"
+      ],
+      "mappings": ";;AAAA;;;;AACA;;;;AAEA;;;;AAEA,IAAMA,MAAM,wBAAZ;;AAEAA,IAAIC,GAAJ,CAAQ,kBAAQC,MAAR,CAAe,eAAKC,IAAL,CAAUC,SAAV,EAAqB,OAArB,CAAf,CAAR;;AAEAJ,IAAIC,GAAJ;;AAEA,IAAMI,WAAWL,IAAIM,MAAJ,CAAWC,QAAQC,GAAR,CAAYC,IAAvB,EAA6B,YAAM;AAClDC,UAAQC,GAAR,oCAA6CN,SAASO,OAAT,GAAmBC,IAAhE;AACD,CAFgB,CAAjB",
+      "file": "server.js",
+      "sourceRoot": "/app",
+      "sourcesContent": [
+        "import express from 'express'\nimport path from 'path'\n\nimport { router } from './routes/router'\n\nconst app = express()\n\napp.use(express.static(path.join(__dirname, 'views')))\n\napp.use(router)\n\nconst listener = app.listen(process.env.PORT, () => {\n  console.log(`Your app is listening on port ${listener.address().port}`)\n})\n"
+      ]
+    },
+    "mtime": 1522968236934
+  },
+  "{\"filename\":\"/app/routes/router.js\",\"env\":{},\"retainLines\":false,\"highlightCode\":true,\"suppressDeprecationMessages\":false,\"presets\":[],\"plugins\":[[[],null],[[],null],[[],null],[[],{\"loose\":false,\"spec\":false}],[[],null],[[],null],[[],{\"spec\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"loose\":false}],[[],null],[[],null],[[],null],[[],{\"loose\":false}],[[],null],[[],{\"loose\":false}],[[],null],[[],null],[[],{\"loose\":false}],[[],{\"async\":false,\"asyncGenerators\":false}]],\"ignore\":[],\"code\":true,\"metadata\":true,\"ast\":true,\"comments\":true,\"compact\":\"auto\",\"minified\":false,\"sourceRoot\":\"/app/routes\",\"babelrc\":true,\"sourceType\":\"module\",\"moduleIds\":false,\"passPerPreset\":false,\"parserOpts\":false,\"generatorOpts\":false}:6.26.0": {
+    "metadata": {
+      "usedHelpers": [
+        "interopRequireDefault"
+      ],
+      "marked": [],
+      "modules": {
+        "imports": [
+          {
+            "source": "express",
+            "imported": [
+              "default"
+            ],
+            "specifiers": [
+              {
+                "kind": "named",
+                "imported": "default",
+                "local": "express"
+              }
+            ]
+          }
+        ],
+        "exports": {
+          "exported": [
+            "router"
+          ],
+          "specifiers": [
+            {
+              "kind": "local",
+              "local": "router",
+              "exported": "router"
+            }
+          ]
+        }
+      }
+    },
+    "options": {
+      "filename": "/app/routes/router.js",
+      "filenameRelative": "/app/routes/router.js",
+      "env": {},
+      "retainLines": false,
+      "highlightCode": true,
+      "suppressDeprecationMessages": false,
+      "presets": [],
+      "plugins": [
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false,
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "spec": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          null
+        ],
+        [
+          [],
+          {
+            "loose": false
+          }
+        ],
+        [
+          [],
+          {
+            "async": false,
+            "asyncGenerators": false
+          }
+        ]
+      ],
+      "ignore": [],
+      "code": true,
+      "metadata": true,
+      "ast": false,
+      "comments": true,
+      "compact": "auto",
+      "minified": false,
+      "sourceMaps": "both",
+      "sourceMapTarget": "router.js",
+      "sourceFileName": "router.js",
+      "sourceRoot": "/app/routes",
+      "babelrc": false,
+      "sourceType": "module",
+      "moduleRoot": "/app/routes",
+      "moduleIds": false,
+      "passPerPreset": false,
+      "parserOpts": false,
+      "generatorOpts": false,
+      "basename": "router"
+    },
+    "ignored": false,
+    "code": "'use strict';\n\nObject.defineProperty(exports, \"__esModule\", {\n  value: true\n});\nexports.router = undefined;\n\nvar _express = require('express');\n\nvar _express2 = _interopRequireDefault(_express);\n\nfunction _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }\n\nvar router = exports.router = _express2.default.Router();\nrouter.get('/whoami', function (req, res) {\n  var ip = req.headers['x-forwarded-for'].split(',')[0] || req.connection.remoteAddress;\n  var lang = req.acceptsLanguages()[0];\n  var user = req.headers['user-agent'];\n\n  res.json({\n    'ipaddress': ip,\n    'language': lang,\n    'software': user.substring(user.indexOf('(') + 1, user.indexOf(')'))\n  });\n});\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInJvdXRlci5qcyJdLCJuYW1lcyI6WyJyb3V0ZXIiLCJSb3V0ZXIiLCJnZXQiLCJyZXEiLCJyZXMiLCJpcCIsImhlYWRlcnMiLCJzcGxpdCIsImNvbm5lY3Rpb24iLCJyZW1vdGVBZGRyZXNzIiwibGFuZyIsImFjY2VwdHNMYW5ndWFnZXMiLCJ1c2VyIiwianNvbiIsInN1YnN0cmluZyIsImluZGV4T2YiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7QUFBQTs7Ozs7O0FBR08sSUFBTUEsMEJBQVMsa0JBQVFDLE1BQVIsRUFBZjtBQUNQRCxPQUFPRSxHQUFQLENBQVcsU0FBWCxFQUFzQixVQUFTQyxHQUFULEVBQWNDLEdBQWQsRUFBa0I7QUFDckMsTUFBSUMsS0FBS0YsSUFBSUcsT0FBSixDQUFZLGlCQUFaLEVBQStCQyxLQUEvQixDQUFxQyxHQUFyQyxFQUEwQyxDQUExQyxLQUFnREosSUFBSUssVUFBSixDQUFlQyxhQUF4RTtBQUNDLE1BQUlDLE9BQU9QLElBQUlRLGdCQUFKLEdBQXVCLENBQXZCLENBQVg7QUFDQSxNQUFJQyxPQUFPVCxJQUFJRyxPQUFKLENBQVksWUFBWixDQUFYOztBQUVBRixNQUFJUyxJQUFKLENBQVM7QUFDVCxpQkFBYVIsRUFESjtBQUVQLGdCQUFZSyxJQUZMO0FBR1QsZ0JBQVlFLEtBQUtFLFNBQUwsQ0FBZUYsS0FBS0csT0FBTCxDQUFhLEdBQWIsSUFBb0IsQ0FBbkMsRUFBc0NILEtBQUtHLE9BQUwsQ0FBYSxHQUFiLENBQXRDO0FBSEgsR0FBVDtBQUtILENBVkQiLCJmaWxlIjoicm91dGVyLmpzIiwic291cmNlUm9vdCI6Ii9hcHAvcm91dGVzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IGV4cHJlc3MgZnJvbSAnZXhwcmVzcydcblxuXG5leHBvcnQgY29uc3Qgcm91dGVyID0gZXhwcmVzcy5Sb3V0ZXIoKVxucm91dGVyLmdldCgnL3dob2FtaScsIGZ1bmN0aW9uKHJlcSwgcmVzKXtcblx0ICBsZXQgaXAgPSByZXEuaGVhZGVyc1sneC1mb3J3YXJkZWQtZm9yJ10uc3BsaXQoJywnKVswXSB8fCByZXEuY29ubmVjdGlvbi5yZW1vdGVBZGRyZXNzXG4gICAgbGV0IGxhbmcgPSByZXEuYWNjZXB0c0xhbmd1YWdlcygpWzBdXG4gICAgbGV0IHVzZXIgPSByZXEuaGVhZGVyc1sndXNlci1hZ2VudCddXG5cbiAgICByZXMuanNvbih7XG4gICAgJ2lwYWRkcmVzcyc6IGlwLFxuICAgICAgJ2xhbmd1YWdlJzogbGFuZyxcbiAgICAnc29mdHdhcmUnOiB1c2VyLnN1YnN0cmluZyh1c2VyLmluZGV4T2YoJygnKSArIDEsIHVzZXIuaW5kZXhPZignKScpKVxuICAgIH0pXG59KSJdfQ==",
+    "ast": null,
+    "map": {
+      "version": 3,
+      "sources": [
+        "router.js"
+      ],
+      "names": [
+        "router",
+        "Router",
+        "get",
+        "req",
+        "res",
+        "ip",
+        "headers",
+        "split",
+        "connection",
+        "remoteAddress",
+        "lang",
+        "acceptsLanguages",
+        "user",
+        "json",
+        "substring",
+        "indexOf"
+      ],
+      "mappings": ";;;;;;;AAAA;;;;;;AAGO,IAAMA,0BAAS,kBAAQC,MAAR,EAAf;AACPD,OAAOE,GAAP,CAAW,SAAX,EAAsB,UAASC,GAAT,EAAcC,GAAd,EAAkB;AACrC,MAAIC,KAAKF,IAAIG,OAAJ,CAAY,iBAAZ,EAA+BC,KAA/B,CAAqC,GAArC,EAA0C,CAA1C,KAAgDJ,IAAIK,UAAJ,CAAeC,aAAxE;AACC,MAAIC,OAAOP,IAAIQ,gBAAJ,GAAuB,CAAvB,CAAX;AACA,MAAIC,OAAOT,IAAIG,OAAJ,CAAY,YAAZ,CAAX;;AAEAF,MAAIS,IAAJ,CAAS;AACT,iBAAaR,EADJ;AAEP,gBAAYK,IAFL;AAGT,gBAAYE,KAAKE,SAAL,CAAeF,KAAKG,OAAL,CAAa,GAAb,IAAoB,CAAnC,EAAsCH,KAAKG,OAAL,CAAa,GAAb,CAAtC;AAHH,GAAT;AAKH,CAVD",
+      "file": "router.js",
+      "sourceRoot": "/app/routes",
+      "sourcesContent": [
+        "import express from 'express'\n\n\nexport const router = express.Router()\nrouter.get('/whoami', function(req, res){\n\t  let ip = req.headers['x-forwarded-for'].split(',')[0] || req.connection.remoteAddress\n    let lang = req.acceptsLanguages()[0]\n    let user = req.headers['user-agent']\n\n    res.json({\n    'ipaddress': ip,\n      'language': lang,\n    'software': user.substring(user.indexOf('(') + 1, user.indexOf(')'))\n    })\n})"
+      ]
+    },
+    "mtime": 1523025315853
+  }
+}
